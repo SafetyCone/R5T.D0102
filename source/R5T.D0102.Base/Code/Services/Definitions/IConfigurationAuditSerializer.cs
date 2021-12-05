@@ -1,13 +1,14 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.Dacia;
+using R5T.T0064;
 
 
 namespace R5T.D0102
 {
     [ServiceDefinitionMarker]
-    public interface IConfigurationAuditSerializer
+    public interface IConfigurationAuditSerializer : IServiceDefinition
     {
+        Task SerializeConfiguration();
     }
 }
