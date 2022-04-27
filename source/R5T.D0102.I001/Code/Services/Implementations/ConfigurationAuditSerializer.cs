@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 
 using Microsoft.Extensions.Configuration;
 
-using R5T.L0015.X001;
+using R5T.L0015.X001;using R5T.T0064;
 
 
 namespace R5T.D0102.I001
-{
-    public class ConfigurationAuditSerializer : IConfigurationAuditSerializer
+{[ServiceImplementationMarker]
+    public class ConfigurationAuditSerializer : IConfigurationAuditSerializer,IServiceImplementation
     {
         private IConfiguration Configuration { get; }
         private IConfigurationSerializationFilePathProvider ConfigurationSerializationFilePathProvider { get; }

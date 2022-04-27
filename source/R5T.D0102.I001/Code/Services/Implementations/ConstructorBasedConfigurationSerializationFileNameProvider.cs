@@ -13,7 +13,7 @@ namespace R5T.D0102
 
 
         public ConstructorBasedConfigurationSerializationFileNameProvider(
-            string configurationSerializationFileName)
+            [NotServiceComponent] string configurationSerializationFileName)
         {
             this.ConfigurationSerializationFileName = configurationSerializationFileName;
         }
