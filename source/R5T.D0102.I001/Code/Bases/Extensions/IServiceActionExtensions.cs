@@ -12,7 +12,7 @@ namespace R5T.D0102.I001
     public static class IServiceActionExtensions
     {
         /// <summary>       
-        /// Adds the <see cref="ConfigurationAuditSerializer"/> implementation of <see cref="IConfigurationAuditSerializer "/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConfigurationAuditSerializer"/> implementation of <see cref="IConfigurationAuditSerializer "/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IConfigurationAuditSerializer> AddConfigurationAuditSerializerAction(this IServiceAction _,
             IServiceAction<IConfiguration> configurationAction,
@@ -26,7 +26,7 @@ namespace R5T.D0102.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ConfigurationSerializationFilePathProvider"/> implementation of <see cref="IConfigurationSerializationFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConfigurationSerializationFilePathProvider"/> implementation of <see cref="IConfigurationSerializationFilePathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IConfigurationSerializationFilePathProvider> AddConfigurationSerializationFilePathProviderAction(this IServiceAction _,
             IServiceAction<IConfigurationSerializationFileNameProvider> configurationSerializationFileNameProviderAction,
@@ -40,7 +40,7 @@ namespace R5T.D0102.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedConfigurationSerializationFileNameProvider"/> implementation of <see cref="IConfigurationSerializationFileNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedConfigurationSerializationFileNameProvider"/> implementation of <see cref="IConfigurationSerializationFileNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IConfigurationSerializationFileNameProvider> AddConstructorBasedConfigurationSerializationFileNameProviderAction(this IServiceAction _,
             string configurationSerializationFileName)
