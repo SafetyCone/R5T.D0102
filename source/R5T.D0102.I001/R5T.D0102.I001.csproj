@@ -3,6 +3,7 @@
     <ProjectReference Include="..\..\..\R5T.D0048\source\R5T.D0048.Base\R5T.D0048.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.L0015\source\R5T.L0015.X001\R5T.L0015.X001.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0062\source\R5T.T0062.X001\R5T.T0062.X001.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0064\source\R5T.T0064.T001\R5T.T0064.T001.csproj" />
     <ProjectReference Include="..\R5T.D0102.Base\R5T.D0102.Base.csproj" />
   </ItemGroup>
   <PropertyGroup>
